@@ -1,0 +1,1 @@
+//can't access popup window or user webpage but it can accessany APIs

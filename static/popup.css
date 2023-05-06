@@ -1,0 +1,48 @@
+h4 {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 33;
+}
+
+
+h5 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hstack {
+    display:flex; 
+    flex-direction:row;
+}
+
+img {
+    width: 40px;
+    height: 40spx; 
+}
+
+.header {
+    height: auto;
+    justify-content: space-around;
+    display: flex;
+    background-color: #B6C0D4;
+    width: 100%;
+    align-items: center;
+}
+
+.container1 {
+    padding: 10px;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+.save-button {
+    margin-top: 5vw;
+    margin-left: 1vw;
+    width: 20vw;
+}
