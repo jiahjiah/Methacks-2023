@@ -10,8 +10,8 @@
 <div class="header">
     <div class="nav1">
         <div class="hstack">
-            <img src="../bulletechLogo.png" alt="Bulletech Logo">
-            <h5> bulletech </h5>
+            <img class="image1" src="../bulletechLogo.png" alt="Bulletech Logo">
+            <h5 class="bulletech"> bulletech </h5>
         </div>
         <div class="hstack">
             <img src="../janeDoeIcon.png" alt="Avatar Icon">
@@ -20,7 +20,12 @@
 </div>
 <div class="container1">
     <h4 id="title"> Save a note on this page </h4>
-    <textarea id="notes" name="review" rows="30" cols="60" placeholder="Enter your Notes"></textarea>
-    <button type="button" class="btn btn-primary save-button" id="saveButton">Save</button>
+    <!-- <textarea id="notes" name="review" rows="30" cols="60" placeholder="Enter your Notes"></textarea> -->
+
+    <form action="javascript:func()" method="POST">
+        <input type="text" id="notes" name="review" placeholder="Enter your Notes">
+    </form>
+
+    <button type="button" class="btn btn-primary save-button" id="saveButton"><img src="../checkmark.png" alt="Image" border="0"/></button>
 </div>     
 <script type="text/javascript" src="../popup.js"></script>    

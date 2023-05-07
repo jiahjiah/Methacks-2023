@@ -11,9 +11,20 @@ h5 {
     font-weight: 600;
 }
 
+.bulletech {
+    margin-left: 5px;
+}
+
+.image1 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .hstack {
     display:flex; 
     flex-direction:row;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 img {
@@ -36,7 +47,7 @@ img {
 
 .nav1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     padding: 10px;
 }
@@ -46,3 +57,25 @@ img {
     margin-left: 1vw;
     width: 20vw;
 }
+
+input[type=text] {
+    width: 500px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  button {
+    border: none;
+    background: none;
+  }
+
+
+  

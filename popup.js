@@ -1,12 +1,17 @@
 // can access some chrome API’s but can’t access any external API’s
 //you cannot interact with the web page that user is viewing from file
 
+
+
+
 chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     /*
      Gets the URL from tab in focus.
      */
+    console.log(tabs[0].url, "hi")
     let url = tabs[0].url;
     let title = tabs[0].title;
+    console.log(title)
     chrome.storage.sync.get([url], function(items){
         /*
         Fetches user data(notes) from persistance storage
@@ -18,7 +23,8 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
             notes = ""
         }
         document.getElementById('notes').value = notes;
-        document.getElementById('title').innerText = title;
+        document.getElementById('title').innerText = url;
+        console.log(document.getElementById('title'))
     });
 });
 
